@@ -1,0 +1,1 @@
+# aspose-ocr-cpp-docker
