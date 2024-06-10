@@ -1,0 +1,26 @@
+﻿{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5296",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "TEMPORARY_STORAGE": "/Users/alex/RiderProjects/tmp",
+        "CLI_EXECUTABLE_PATH": "/Users/alex/RiderProjects/OcrGrpcWrapper/cli/Aspose.OCR.Cpp.exe"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:7170;http://localhost:5296",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "TEMPORARY_STORAGE": "/Users/alex/RiderProjects/tmp",
+        "CLI_EXECUTABLE_PATH": "/Users/alex/RiderProjects/OcrGrpcWrapper/cli/Aspose.OCR.Cpp.exe"
+      }
+    }
+  }
+}

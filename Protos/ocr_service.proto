@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+option csharp_namespace = "OcrGrpcWrapper";
+
+package ocr;
+
+service OcrService {
+  rpc Process (OcrRequest) returns (OcrResponse);
+  rpc HealthCheck (EchoRequest) returns (OcrResponse);
+  rpc Documentation (Empty) returns (OcrResponse);
+}
+
+message OcrRequest {
+  bytes input_file = 1;
+  string file_type = 2;
+  string language = 3;
+  string output_format = 4;
+  string detect_areas_mode = 5;
+  string allowed_characters = 6;
+  string alphabet = 7;
+  string ignored_characters = 8;
+  bool auto_deskew = 9;
+  double rotate = 10;
+  bool upscale_small_font = 11;
+  bool auto_contrast = 12;
+  bool auto_denoise = 13;
+}
+
+message OcrResponse {
+  string output = 1;
+}
+
+// The request message containing the user's name.
+message EchoRequest {
+  string message = 1;
+}
+
+message Empty {}
