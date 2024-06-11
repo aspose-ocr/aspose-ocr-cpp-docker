@@ -20,17 +20,18 @@ service OcrService {
 
 message OcrRequest {
   bytes input_file = 1;
-  string language = 2;
-  string output_format = 3;
-  string detect_areas_mode = 4;
-  string allowed_characters = 5;
-  string alphabet = 6;
-  string ignored_characters = 7;
-  bool auto_deskew = 8;
-  double rotate = 9;
-  bool upscale_small_font = 10;
-  bool auto_contrast = 11;
-  bool auto_denoise = 12;
+  string file_type = 2;
+  string language = 3;
+  string output_format = 4;
+  string detect_areas_mode = 5;
+  string allowed_characters = 6;
+  string alphabet = 7;
+  string ignored_characters = 8;
+  bool auto_deskew = 9;
+  double rotate = 10;
+  bool upscale_small_font = 11;
+  bool auto_contrast = 12;
+  bool auto_denoise = 13;
 }
 
 message OcrResponse {
