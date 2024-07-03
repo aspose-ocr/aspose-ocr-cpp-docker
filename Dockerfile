@@ -32,7 +32,7 @@ COPY --from=download /cli/* /app/
 
 ENV LICENSE_PATH /temp_storage/Aspose.OCR.lic
 ENV TEMPORARY_STORAGE /temp_storage
-ENV CLI_EXECUTABLE_PATH /app/Aspose.OCR.Cpp.exe
+ENV CLI_EXECUTABLE_PATH /app/asposeocrapp
 
 RUN chmod +x CLI_EXECUTABLE_PATH
 
